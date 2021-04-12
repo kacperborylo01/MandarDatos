@@ -7,6 +7,7 @@ package Datos;
 
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,8 +22,15 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
         iniciarModelos();
+        
     }
     
+    private void crearIcono(){
+         
+        initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/Icono/Icono.png")).getImage());
+    
+    }
     private void iniciarModelos(){
         modeloMadrid = new DefaultComboBoxModel();
         modeloBarcelona = new DefaultComboBoxModel();
@@ -55,7 +63,7 @@ public class Inicio extends javax.swing.JFrame {
         modeloMadrid.addElement("Vinicius Junior");
         modeloMadrid.addElement("Eden Hazard");
         
-        
+        setIconImage(new ImageIcon(getClass().getResource("/Icono/Icono.png")).getImage());
     }
 
     /**
